@@ -1,15 +1,18 @@
-// Variables
+// Cores institucionais
+$yellow: hsla(42, 81%, 49%, 1) !default;
+$dark-yellow: hsla(42, 61%, 49%, 1) !default;
+$blue: hsla(202, 100%, 37%, 1) !default;
+$dark-blue: hsla(202, 50%, 37%, 1) !default;
 
-// Color overrides
+// Primária e secundária
+$primary: $yellow !default;
+$primary-dark: $dark-yellow !default;
+$secondary: $blue !default;
+$secondary-dark: $dark-blue !default;
 
 // Set a custom color
 $orange: #f4623a !default;
 $brown: #5c4d42 !default;
-$blue: #0079bf !default;
-$yellow: #e3a519 !default;
-
-// Set primary color to orange
-$primary: $yellow !default;
 
 // Font overrides
 $font-family-sans-serif: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 'Noto Color Emoji' !default;
