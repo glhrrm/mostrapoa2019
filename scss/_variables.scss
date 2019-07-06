@@ -3,12 +3,14 @@ $yellow: hsla(42, 81%, 49%, 1) !default;
 $dark-yellow: hsla(42, 61%, 49%, 1) !default;
 $blue: hsla(202, 100%, 37%, 1) !default;
 $dark-blue: hsla(202, 50%, 37%, 1) !default;
+$light-blue: hsla(202, 40%, 57%, 1) !default;
 
 // Primária e secundária
 $primary: $yellow !default;
 $primary-dark: $dark-yellow !default;
 $secondary: $blue !default;
 $secondary-dark: $dark-blue !default;
+$secondary-light: $light-blue !default;
 
 // Set a custom color
 $orange: #f4623a !default;
