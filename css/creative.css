@@ -10796,6 +10796,16 @@ header.masthead h1 {
   box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+#contato .contact-informations ul {
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+#contato .contact-informations ul li {
+  padding: 0.4rem 0;
+  list-style: none;
+}
+
 body,
 html {
   width: 100%;
@@ -10854,7 +10864,7 @@ hr.secondary-light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .bg-primary {
