@@ -449,6 +449,50 @@
   <!-- Contact Section -->
   <section class="page-section" id="contato">
     <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Contato</h2>
+          <form action="" validate>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputNome">Nome</label>
+                <input type="text" id="inputNome" class="form-control" placeholder="Nome" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail">E-mail</label>
+                <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAssunto">Assunto</label>
+              <input type="text" id="inputAssunto" class="form-control" placeholder="Assunto" required>
+            </div>
+            <div class="form-group">
+              <label for="inputMensagem">Mensagem</label>
+              <textarea class="form-control" id="inputMensagem" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+          </form>
+        </div>
+        <div class="col">
+          <h3>Informações</h3>
+          <ul>
+            <li>
+                <i class="fas fa-map mr-2 text-muted"></i>Rua Coronel Vicente, 281 - Centro Histórico, Porto Alegre - RS, CEP 90030-040
+            </li>
+            <li>
+              <i class="fas fa-phone mr-2 text-muted"></i>(51) 3930-6072
+            </li>
+            <li>
+              <i class="fas fa-envelope mr-2 text-muted"></i><a href="mailto:mostra@poa.ifrs.edu.br">mostra@poa.ifrs.edu.br</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="page-section" id="contato">
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
           <h2 class="mt-0">Let's Get In Touch!</h2>
@@ -464,19 +508,19 @@
         </div>
         <div class="col-lg-4 mr-auto text-center">
           <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
           <a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Footer -->
   <footer class="bg-light py-5">
     <div class="container">
-      <div class="small text-center text-muted">&copy; 2019 Instituto Federal do Rio Grande do Sul. Todos os direitos
-        reservados.
-        <br>Desenvolvido com Bootstrap por Guilherme Parzianello, Igor Cemim e Jurley Ribeiro.</div>
+      <div class="small text-center text-muted">
+        <p>&copy; 2019 Instituto Federal do Rio Grande do Sul. Todos os direitos reservados.</p>
+        <p>Desenvolvido com Bootstrap por Guilherme Parzianello, Igor Cemim e Jurley Ribeiro.<p>
+      </div>
     </div>
   </footer>
 
