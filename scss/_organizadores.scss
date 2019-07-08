@@ -5,25 +5,21 @@
 .carousel .item {
     text-align: center;
 	overflow: hidden;
-    min-height: 290px;
 }
 .carousel .item .img-box {
 	width: 135px;
 	height: 135px;
 	margin: 0 auto;
 	padding: 5px;
-	border: 1px solid #ddd;
-	border-radius: 50%;
+	clip-path: circle(60px at center);
 }
 .carousel .img-box img {
 	width: 100%;
 	display: block;
-	border-radius: 50%;
 }
 
 .carousel .overview {
     margin-top: 30px;
-	font-style: italic;
 }
 .carousel .overview b {
 	text-transform: uppercase;
