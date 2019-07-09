@@ -13,6 +13,7 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
 const htmlmin = require('gulp-htmlmin');
+const zip = require('gulp-zip');
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -133,10 +134,17 @@ function watchFiles() {
   gulp.watch("./src/**/*", html);
 }
 
+function buildDist() {
+  return gulp.src('dist/**/*')
+        .pipe(zip('deploy.zip'))
+        .pipe(gulp.dest('./'));
+}
+
 // Define complex tasks
 const vendor = gulp.series(modules);
 const build = gulp.series(clean, vendor, gulp.parallel(css, js, html, img));
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
+const dist = gulp.series(buildDist)
 
 // Export tasks
 exports.css = css;
@@ -146,3 +154,4 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
+exports.dist = dist;
