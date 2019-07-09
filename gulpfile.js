@@ -12,7 +12,6 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
-const htmlmin = require('gulp-htmlmin');
 const zip = require('gulp-zip');
 
 // Load package.json for banner
@@ -120,9 +119,6 @@ function img() {
 function html() {
   return gulp
     .src('./src/**/*')
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
     .pipe(gulp.dest('./dist'))
     .pipe(browsersync.stream());
 }
