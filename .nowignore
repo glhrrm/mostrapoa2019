@@ -1,0 +1,11 @@
+node_modules
+img
+js
+scss
+src
+*.json
+.nowignore
+.editorconfig
+gulpfile.js
+LICENSE
+README.md
